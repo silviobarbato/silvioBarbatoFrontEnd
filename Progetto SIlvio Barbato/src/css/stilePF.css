@@ -1,0 +1,62 @@
+#myId{
+	background-color: #2f4f4f;
+	color: #ffffff;
+	font-style: normal;
+}
+.hero{ background-color: #e0ffff;
+
+}
+
+#logo{
+	width: 24px;
+}
+
+.paragraf{ margin: 15px; }
+
+
+#newId{ margin: 0px 15px; }
+
+body{ margin: 0px; }
+
+.hero > h1 { margin: 0px 15px; }
+.hero {
+	padding: 20px;
+}
+
+.article{ width: 33%;
+display: inline-block;
+vertical-align: top; }
+
+.tech{
+	margin-top: 20px;
+	display: block;
+}
+
+.artcle, img{ width: 100%;
+	display: inline-block;
+ }
+
+
+
+#cookie{
+width: 100%;
+	position: fixed;
+	bottom: 0%;
+}
+section, footer {
+	padding: 15px;
+}
+.botClassGrey{
+	padding: 7px;
+	border: 1px solid grey;
+	border-right: 7px;
+	text-decoration: none;
+}
+
+.botClassGreen{
+	padding: 7px;
+	border: 1px solid grey;
+	border-right: 7px;
+	text-decoration: none;
+	background-color: green;
+}
