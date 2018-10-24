@@ -1,13 +1,24 @@
-/*
-var element document.getElementByClassName('bot');
+var val=document.getElementsByClassName('like');
 
-for (element=0; step<3; step++){
-	element.addEventListener('click', changeColor);
+for (var i=0; i<val.length; i++){
+	val[i].addEventListener('click', function(){
+
+		if(this.style.backgroundColor === "green"){
+			this.style.color="black";
+			this.style.backgroundColor="white";
+		}else{
+			this.style.backgroundColor="green";
+			this.style.color="white";
+		}
+	});
 }
 
 
-function changeColor(){
-	document.getElementByClassName('bot').style.color = "red";
 
-}
+var val2=document.getElementById('cookie');
 
+function chiudiCookie(){
+	document.getElementById('ck').style.display='none';
+
+};
+val2.addEventListener('click', chiudiCookie);
