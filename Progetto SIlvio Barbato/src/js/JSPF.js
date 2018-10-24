@@ -1,3 +1,4 @@
+/*
 var element document.getElementByClassName('bot');
 
 for (element=0; step<3; step++){
