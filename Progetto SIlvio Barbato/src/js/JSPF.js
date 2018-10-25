@@ -1,3 +1,5 @@
+const $ = require('jquery');
+
 var val=document.getElementsByClassName('like');
 
 for (var i=0; i<val.length; i++){
@@ -18,7 +20,11 @@ for (var i=0; i<val.length; i++){
 var val2=document.getElementById('cookie');
 
 function chiudiCookie(){
-	document.getElementById('ck').style.display='none';
+	document.getElementById('cookie').style.display='none';
 
 };
 val2.addEventListener('click', chiudiCookie);
+/*
+$('#cookie').on('click', () =>{
+
+})*/
