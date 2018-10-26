@@ -20,11 +20,35 @@ for (var i=0; i<val.length; i++){
 var val2=document.getElementById('cookie');
 
 function chiudiCookie(){
+
 	document.getElementById('cookie').style.display='none';
 
 };
 val2.addEventListener('click', chiudiCookie);
-/*
-$('#cookie').on('click', () =>{
 
-})*/
+/*
+$('#cok').on('click', () =>{
+	$('#cookie').hide();
+})
+*/
+/*
+function doAjax(){
+	$.ajax({
+		url: 'src/file.json',
+	method: "POST"
+})
+};
+*/
+
+$.ajax({
+	url: 'src/file.json',
+	method: "GET",
+	success: function(result){
+		//console.log('success');
+		$('#jx').append(result);
+	},
+	error: function(result){
+		console.log('error');
+	}
+});
+

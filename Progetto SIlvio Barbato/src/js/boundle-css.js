@@ -9955,7 +9955,34 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 		var val2 = document.getElementById('cookie');
 
 		function chiudiCookie() {
+
 			document.getElementById('cookie').style.display = 'none';
 		};
 		val2.addEventListener('click', chiudiCookie);
+
+		/*
+  $('#cok').on('click', () =>{
+  	$('#cookie').hide();
+  })
+  */
+		/*
+  function doAjax(){
+  	$.ajax({
+  		url: 'src/file.json',
+  	method: "POST"
+  })
+  };
+  */
+
+		$.ajax({
+			url: 'src/file.json',
+			method: "GET",
+			success: function success(result) {
+				//console.log('success');
+				$('#jx').toArray(result);
+			},
+			error: function error(result) {
+				console.log('error');
+			}
+		});
 	}, { "jquery": 1 }] }, {}, [2]);
