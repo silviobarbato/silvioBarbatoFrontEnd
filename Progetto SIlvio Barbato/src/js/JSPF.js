@@ -1,5 +1,6 @@
 const $ = require('jquery');
 
+/*
 var val=document.getElementsByClassName('like');
 
 for (var i=0; i<val.length; i++){
@@ -14,9 +15,9 @@ for (var i=0; i<val.length; i++){
 		}
 	});
 }
+*/
 
-
-
+/*
 var val2=document.getElementById('cookie');
 
 function chiudiCookie(){
@@ -25,27 +26,28 @@ function chiudiCookie(){
 
 };
 val2.addEventListener('click', chiudiCookie);
+*/
 
-/*
 $('#cok').on('click', () =>{
 	$('#cookie').hide();
 })
-*/
-/*
-function doAjax(){
-	$.ajax({
-		url: 'src/file.json',
-	method: "POST"
+
+
+
+$('.btn, .btn-light').on('click', event =>{
+	$(event.currentTarget).toggleClass('btn-success');
 })
-};
-*/
+
 
 $.ajax({
 	url: 'src/file.json',
 	method: "GET",
 	success: function(result){
 		//console.log('success');
-		$('#jx').append(result);
+		for(i=0; i<result.length; i++){
+			$('#jx').append(result[i].text);
+		}
+		
 	},
 	error: function(result){
 		console.log('error');
