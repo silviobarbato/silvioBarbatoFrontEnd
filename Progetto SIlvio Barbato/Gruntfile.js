@@ -57,7 +57,7 @@ module.exports = function (grunt)
 		uglify: {
 			target: {
 				files: {
-					'dist/js/boundle.min.js': 'src/js/boundle-css.js'
+					'dist/js/boundle.min.js': ['src/js/boundle-css.js']
 				}
 			}
 		}
@@ -66,13 +66,14 @@ module.exports = function (grunt)
 
 	grunt.loadNpmTasks('grunt-serve');
 	grunt.loadNpmTasks('grunt-browserify');
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-babel');
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	
 
 	grunt.task.registerTask('develop', ['watch']);
-	grunt.task.registerTask('build', ['cssmin','browserify','babel','uglify','serve']);
+	grunt.task.registerTask('build', ['cssmin','babel','uglify','serve']);
 };

@@ -44,7 +44,7 @@ $.ajax({
 	method: "GET",
 	success: function(result){
 		//console.log('success');
-		for(i=0; i<result.length; i++){
+		for(var i=0; i<result.length; i++){
 			$('#jx').append(result[i].text);
 		}
 		
@@ -53,4 +53,5 @@ $.ajax({
 		console.log('error');
 	}
 });
+
 

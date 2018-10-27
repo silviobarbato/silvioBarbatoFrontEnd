@@ -3,17 +3,8 @@
   color: #ffffff;
   font-style: normal;
 }
-.hero {
-  background-color: #e0ffff;
-}
-#logo {
-  width: 24px;
-}
-.paragraf {
-  margin: 15px;
-}
 #newId {
-  margin: 0px 60px;
+  margin: 0px /*60px*/ 60px;
   padding: 10px;
 }
 .btn-lg {
@@ -22,12 +13,6 @@
 body {
   margin: 0px;
 }
-.hero > h1 {
-  margin: 0px 15px;
-}
-.hero {
-  padding: 20px;
-}
 p {
   margin-top: 20px;
 }
@@ -35,12 +20,8 @@ p {
   margin-top: 20px;
 }
 .jumbotron {
-  /*padding-top: 48px;
-	padding-bottom: 48px;
-	padding-left: 15px;
-	padding-right: 15px;
-	*/
   padding: 60px;
+  padding-right: 90px;
   margin-bottom: 15px;
 }
 img {
@@ -66,7 +47,7 @@ footer {
   padding-left: 60px;
 }
 #content {
-  padding-left: 60px;
+  padding-left: 60px /*60px*/;
   padding-right: 60px;
 }
 .like {

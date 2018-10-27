@@ -9978,7 +9978,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 			method: "GET",
 			success: function success(result) {
 				//console.log('success');
-				for (i = 0; i < result.length; i++) {
+				for (var i = 0; i < result.length; i++) {
 					$('#jx').append(result[i].text);
 				}
 			},
