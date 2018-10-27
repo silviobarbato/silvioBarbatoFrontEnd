@@ -7,9 +7,6 @@
   margin: 0px /*60px*/ 60px;
   padding: 10px;
 }
-.btn-lg {
-  border-color: unset;
-}
 body {
   margin: 0px;
 }
@@ -23,6 +20,9 @@ p {
   padding: 60px;
   padding-right: 90px;
   margin-bottom: 15px;
+}
+.jumbotron p {
+  font-size: 18px;
 }
 img {
   width: 100%;
@@ -56,4 +56,9 @@ footer {
   padding: 7px;
   border: 1px solid grey;
   text-decoration: none;
+}
+.btn-light2 {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
 }

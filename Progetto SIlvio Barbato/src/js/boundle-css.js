@@ -9970,7 +9970,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 		});
 
 		$('.btn, .btn-light').on('click', function (event) {
-			$(event.currentTarget).toggleClass('btn-success');
+			$(event.currentTarget).toggleClass('btn-light2');
 		});
 
 		$.ajax({

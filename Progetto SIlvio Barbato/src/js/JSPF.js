@@ -30,13 +30,12 @@ val2.addEventListener('click', chiudiCookie);
 
 $('#cok').on('click', () =>{
 	$('#cookie').hide();
-})
-
+});
 
 
 $('.btn, .btn-light').on('click', event =>{
-	$(event.currentTarget).toggleClass('btn-success');
-})
+	$(event.currentTarget).toggleClass('btn-light2');
+});
 
 
 $.ajax({
