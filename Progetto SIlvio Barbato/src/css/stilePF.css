@@ -1,0 +1,87 @@
+#myId {
+  background-color: #2f4f4f;
+  color: #ffffff;
+  font-style: normal;
+}
+#myId h5 {
+  margin: 0px /*60px*/ 60px;
+  padding: 10px;
+}
+/*
+#myId{
+	background-color: @col-1;
+	color: @col-2;
+	font-style: normal;
+}
+
+#newId{ margin: 0px /*60px@px;
+	padding: 10px;
+}*/
+body {
+  margin: 0px;
+}
+p {
+  margin-top: 20px;
+}
+.tech {
+  margin-top: 20px;
+}
+.jumbotron {
+  padding: 60px;
+  padding-right: 90px;
+  margin-bottom: 15px;
+}
+.jumbotron p {
+  font-size: 18px;
+}
+img {
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+/*
+#ck{
+	color: @col-3;
+}*/
+#cookie {
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+  background-color: #2f4f4f;
+  padding: 10px;
+  z-index: 90;
+  padding-left: 60px;
+}
+#cookie span {
+  color: white;
+}
+footer {
+  padding: 15px;
+  margin-bottom: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+#content {
+  padding-left: 47px;
+  padding-right: 60px;
+}
+.like {
+  background-color: white;
+  color: black;
+  padding: 7px;
+  border: 1px solid grey;
+  text-decoration: none;
+  position: absolute;
+  bottom: -40px;
+}
+.btn-light2 {
+  color: #fff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+.article {
+  margin-bottom: 40px;
+}
+.row {
+  margin: 0px;
+}
