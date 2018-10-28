@@ -45,6 +45,7 @@ footer {
   padding: 15px;
   margin-bottom: 20px;
   padding-left: 60px;
+  padding-right: 60px;
 }
 #content {
   padding-left: 60px /*60px*/;
@@ -56,9 +57,17 @@ footer {
   padding: 7px;
   border: 1px solid grey;
   text-decoration: none;
+  position: absolute;
+  bottom: -35px;
 }
 .btn-light2 {
   color: #fff;
   background-color: #449d44;
   border-color: #398439;
+}
+.article {
+  margin-bottom: 40px;
+}
+.row {
+  margin: 0px;
 }
