@@ -10396,11 +10396,11 @@ val2.addEventListener('click', chiudiCookie);
 */
 
 $('#cok').on('click', () =>{
-	$('#cookie').hide();
+	$('#cookie').fadeOut();
 });
 
 
-$('.btn, .btn-light').on('click', event =>{
+$('.btn-light').on('click', event =>{
 	$(event.currentTarget).toggleClass('btn-light2');
 });
 

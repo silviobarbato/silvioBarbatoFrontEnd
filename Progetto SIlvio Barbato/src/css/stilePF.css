@@ -3,10 +3,20 @@
   color: #ffffff;
   font-style: normal;
 }
-#newId {
+#myId h5 {
   margin: 0px /*60px*/ 60px;
   padding: 10px;
 }
+/*
+#myId{
+	background-color: @col-1;
+	color: @col-2;
+	font-style: normal;
+}
+
+#newId{ margin: 0px /*60px@px;
+	padding: 10px;
+}*/
 body {
   margin: 0px;
 }
@@ -29,9 +39,10 @@ img {
   display: inline-block;
   margin-bottom: 15px;
 }
-#ck {
-  color: white;
-}
+/*
+#ck{
+	color: @col-3;
+}*/
 #cookie {
   width: 100%;
   position: fixed;
@@ -40,6 +51,9 @@ img {
   padding: 10px;
   z-index: 90;
   padding-left: 60px;
+}
+#cookie span {
+  color: white;
 }
 footer {
   padding: 15px;
@@ -58,7 +72,7 @@ footer {
   border: 1px solid grey;
   text-decoration: none;
   position: absolute;
-  bottom: -35px;
+  bottom: -40px;
 }
 .btn-light2 {
   color: #fff;

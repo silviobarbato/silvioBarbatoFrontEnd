@@ -9966,10 +9966,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   */
 
 		$('#cok').on('click', function () {
-			$('#cookie').hide();
+			$('#cookie').fadeOut();
 		});
 
-		$('.btn, .btn-light').on('click', function (event) {
+		$('.btn-light').on('click', function (event) {
 			$(event.currentTarget).toggleClass('btn-light2');
 		});
 
