@@ -36,13 +36,6 @@ $('#cok').on('click', () =>{
 	$('#cookie').fadeOut();
 });
 
-$('.pippo').slick({
-  dots: true,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  adaptiveHeight: true
-});
 	
 /*$('.btn-light').on('click', event =>{
 	$(event.currentTarget).toggleClass('btn-light2');
@@ -116,4 +109,11 @@ $.ajax({
 
 };
 
+$('.pippo').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true
+});
 

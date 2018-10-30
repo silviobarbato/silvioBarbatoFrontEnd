@@ -15547,14 +15547,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 			$('#cookie').fadeOut();
 		});
 
-		$('.pippo').slick({
-			dots: true,
-			infinite: true,
-			speed: 300,
-			slidesToShow: 1,
-			adaptiveHeight: true
-		});
-
 		/*$('.btn-light').on('click', event =>{
   	$(event.currentTarget).toggleClass('btn-light2');
   });*/
@@ -15622,4 +15614,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				}
 			});
 		};
+
+		$('.pippo').slick({
+			dots: true,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 1,
+			adaptiveHeight: true
+		});
 	}, { "Mustache": 1, "bootstrap": 2, "jquery": 15, "slick-carousel": 16 }] }, {}, [17]);
