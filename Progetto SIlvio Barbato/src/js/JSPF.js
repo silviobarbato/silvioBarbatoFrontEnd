@@ -1,6 +1,7 @@
-const $ = require('jquery');
-
+var $ =window.jQuery= require('jquery');
+const bootstrap = require('bootstrap');
 const Mustache= require('Mustache');
+const slick= require('slick-carousel');
 doAjax();
 
 /*
@@ -35,7 +36,14 @@ $('#cok').on('click', () =>{
 	$('#cookie').fadeOut();
 });
 
-
+$('.pippo').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true
+});
+	
 /*$('.btn-light').on('click', event =>{
 	$(event.currentTarget).toggleClass('btn-light2');
 });*/
@@ -98,38 +106,14 @@ $.ajax({
 		//console.log(render);
 		$('#content').html(render);
 
-
-
-
-
-		/*$('#art1').append("<h2>" + result[0].text + "</h2>");
-        $('#art1').append("<img src=" + result[1].text + ">");
-        $('#art1').append("<span class="+"'label label-primary'"+">" + result[2].text + "</span>");  
-        $('#art1').append("<p>" + result[3].text + "</p>");
-        /*$('#art1').append("<span class="+"'like btn btn-light'>"+ result[4].text +"</span>");*/
-		
-		/*$('#art2').append("<h2>" + result[4].text + "</h2>");
-        $('#art2').append("<img src=" + result[5].text + ">");
-        $('#art2').append("<span class="+"'label label-primary'"+">" + result[6].text + "</span>");  
-        $('#art2').append("<p>" + result[7].text + "</p>");
-        /*$('#art2').append("<span class="+"'like btn btn-light'>"+ result[9].text +"</span>");*/
-
-        /*$('#art3').append("<h2>" + result[8].text + "</h2>");
-        $('#art3').append("<img src=" + result[9].text + ">");
-        $('#art3').append("<span class="+"'label label-primary'"+">" + result[10].text + "</span>");  
-        $('#art3').append("<p>" + result[11].text + "</p>");
-        /*$('#art3').append("<span class="+"'like btn btn-light'>"+ result[14].text +"</span>");*/
-
-        /*$('#art4').append("<h2>" + result[12].text + "</h2>");
-        $('#art4').append("<img src=" + result[13].text + ">");
-        $('#art4').append("<span class="+"'label label-primary'"+">" + result[14].text + "</span>");  
-        $('#art4').append("<p>" + result[15].text + "</p>");
-        /*$('#art4').append("<span class="+"'like btn btn-light'>"+ result[19].text +"</span>");*/
 	},
 	error: function(result){
 		console.log('error');
 	}
 });
+
+
+
 };
 
 

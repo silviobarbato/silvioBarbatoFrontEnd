@@ -28,7 +28,7 @@ module.exports = function (grunt)
 		cssmin: {
 			target: {
 				files: {
-					'dist/css/stilePf.min.css': ['node_modules/bootstrap/dist/css/bootstrap.css','src/css/stilePF.css'] 
+					'dist/css/stilePf.min.css': ['node_modules/slick-carousel/slick/slick.css','node_modules/slick-carousel/slick/slick-theme.css','node_modules/bootstrap/dist/css/bootstrap.css','src/css/stilePF.css'] 
 
 				}
 			}
