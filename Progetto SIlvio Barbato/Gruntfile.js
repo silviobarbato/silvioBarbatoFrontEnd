@@ -76,4 +76,7 @@ module.exports = function (grunt)
 
 	grunt.task.registerTask('develop', ['watch']);
 	grunt.task.registerTask('build', ['cssmin','babel','uglify','serve']);
+
+
+	
 };
