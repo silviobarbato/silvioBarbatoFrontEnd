@@ -1,7 +1,6 @@
 {
    "articoli": [
    	{
-   		"id" : 1,
    		"title" : "Article Title 1",
    		"image": "http://pngimg.com/uploads/tablet/tablet_PNG8601.png",
    		"tech": "Tech",
@@ -10,7 +9,6 @@
    	},
 
    	{
-   		"id" :2,
    		"title" : "Article Title 2",
    		"image": "http://pngimg.com/uploads/smartphone/smartphone_PNG8536.png",
    		"tech": "Tech",
@@ -19,7 +17,6 @@
    	},
 
    	{
-   		"id": 3,
    		"title" : "Article Title 3",
    		"image": "http://tomsblog.it/andreaferrario/files/xperia-z1-compact-hero-black-1240x840-0da4cf75109b8803ab8362c6b82bafdc.jpg",
    		"tech": "Tech",
@@ -28,7 +25,6 @@
    	},
 
    	{
-   		"id": 4,
    		"title" : "Article Title 4",
    		"image": "http://www.androidblog.it/wp-content/uploads/2013/04/xperia-tablet-z-gallery-06-PS-1240x840-e4e973fc5b4e32598099a1b78cf668ba-1024x693.png",
    		"tech": "Tech",
