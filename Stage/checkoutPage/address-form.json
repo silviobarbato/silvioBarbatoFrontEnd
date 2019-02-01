@@ -1,0 +1,11 @@
+{
+    "address-form": [{
+        "text": "* Campi obbligatori"
+        },
+        {
+            "item": "NOME *"
+        },
+        {
+            "item" : "COGNOME *"
+        }]
+}

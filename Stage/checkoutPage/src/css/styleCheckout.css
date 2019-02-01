@@ -113,11 +113,15 @@ body {
     float: left; }
     .container .content .shipping {
       width: 55%;
-      margin: 5% 10% 0 10%;
+      margin: 5% 10% 3% 10%;
       float: left; }
       .container .content .shipping .shipping-mode, .container .content .shipping .shipping-address {
         width: 100%;
-        float: left; }
+        float: left;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        box-sizing: border-box; }
         .container .content .shipping .shipping-mode .sect-title, .container .content .shipping .shipping-address .sect-title {
           width: 100%;
           float: left;
@@ -178,14 +182,74 @@ body {
             .container .content .shipping .shipping-mode .shipping-mode-choose .choose .check2, .container .content .shipping .shipping-address .shipping-mode-choose .choose .check2 {
               display: inline-flex;
               padding-left: 35px;
-              color: #50475e; }
+              color: #50475e;
+              cursor: pointer; }
               .container .content .shipping .shipping-mode .shipping-mode-choose .choose .check2 span, .container .content .shipping .shipping-address .shipping-mode-choose .choose .check2 span {
                 font-weight: 700; }
             .container .content .shipping .shipping-mode .shipping-mode-choose .choose .check3, .container .content .shipping .shipping-address .shipping-mode-choose .choose .check3 {
               float: right;
               color: #50475e; }
-          .container .content .shipping .shipping-mode .shipping-mode-choose .choose1, .container .content .shipping .shipping-address .shipping-mode-choose .choose1 {
-            border-bottom: 1px solid #0061af; }
+            .container .content .shipping .shipping-mode .shipping-mode-choose .choose.choose1, .container .content .shipping .shipping-address .shipping-mode-choose .choose.choose1 {
+              border-bottom: 1px solid #0061af; }
+            .container .content .shipping .shipping-mode .shipping-mode-choose .choose.play .check1, .container .content .shipping .shipping-address .shipping-mode-choose .choose.play .check1 {
+              color: #0061af; }
+            .container .content .shipping .shipping-mode .shipping-mode-choose .choose.play .check2, .container .content .shipping .shipping-address .shipping-mode-choose .choose.play .check2 {
+              color: #0061af; }
+            .container .content .shipping .shipping-mode .shipping-mode-choose .choose.play .check3, .container .content .shipping .shipping-address .shipping-mode-choose .choose.play .check3 {
+              color: #0061af; }
+        .container .content .shipping .shipping-mode .shipping-mode-confirm, .container .content .shipping .shipping-address .shipping-mode-confirm {
+          float: left;
+          padding: 0px 5%;
+          width: 90%;
+          display: none;
+          font-size: 13px;
+          line-height: 60px;
+          color: #50475e; }
+          .container .content .shipping .shipping-mode .shipping-mode-confirm .right, .container .content .shipping .shipping-address .shipping-mode-confirm .right {
+            float: right;
+            text-decoration: underline;
+            font-weight: 700;
+            cursor: pointer; }
+      .container .content .shipping .shipping-address {
+        border-bottom: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        box-sizing: border-box;
+        border-top: none; }
+        .container .content .shipping .shipping-address .shipping-address-form {
+          float: left;
+          width: 90%;
+          margin: 3% 5%;
+          display: none; }
+          .container .content .shipping .shipping-address .shipping-address-form .message {
+            color: #57a2ec;
+            margin-bottom: 18px;
+            font-size: 13px; }
+          .container .content .shipping .shipping-address .shipping-address-form .field-form {
+            margin-bottom: 20px;
+            height: 50px;
+            width: 100%;
+            display: table; }
+            .container .content .shipping .shipping-address .shipping-address-form .field-form label {
+              width: 30%;
+              display: table-cell;
+              color: #50475e;
+              font-weight: 700; }
+            .container .content .shipping .shipping-address .shipping-address-form .field-form input {
+              display: table-cell;
+              width: -webkit-fill-available;
+              height: 27px;
+              padding: 0 10px; }
+          .container .content .shipping .shipping-address .shipping-address-form .confirm {
+            float: right;
+            margin-bottom: 10px; }
+            .container .content .shipping .shipping-address .shipping-address-form .confirm button {
+              background-color: white;
+              border: 1px solid #0061af;
+              color: #0061af;
+              padding: 16px 30px;
+              width: 180px;
+              font-size: 14px; }
     .container .content .cont-right {
       width: 20%;
       float: left;

@@ -144,11 +144,15 @@ body{
 		float: left;
 		.shipping{
 			width: 55%;
-			margin: 5% 10% 0 10%;
+			margin: 5% 10% 3% 10%;
 			float: left;
 			.shipping-mode{
 				width: 100%;
 				float: left;
+				border-left: 1px solid #ccc;
+			    border-right: 1px solid #ccc;
+			    border-top: 1px solid #ccc;
+			    box-sizing: border-box;
 				.sect-title{
 					width: 100%;
 					float: left;
@@ -188,7 +192,6 @@ body{
 						.check1{
 							display: inline-flex;
 
-
 							input{
 								-webkit-appearance: none;
 							    display: inline-block;
@@ -224,22 +227,100 @@ body{
 							display: inline-flex;
     						padding-left: 35px;
 							color: #50475e;
+							cursor: pointer;
 							span{
 								font-weight: 700;
 							}
 						}
+
 						.check3{
 							float: right;
 							color: #50475e;
 						}
+
+						&.choose1{
+							border-bottom: 1px solid #0061af;
+						}
+						&.play{
+							.check1{
+								color: #0061af;
+							}
+							.check2{
+								color: #0061af;
+							}
+							.check3{
+								color: #0061af;
+							}
+						}
 					}
-					.choose1{
-						border-bottom: 1px solid #0061af;
+				}
+				.shipping-mode-confirm{
+					float: left;
+					padding: 0px 5%;
+					width: 90%;
+					display: none;
+					font-size: 13px;
+					line-height: 60px;
+					color: #50475e;
+
+					.right{
+						float: right;
+						text-decoration: underline;
+						font-weight: 700;
+						cursor: pointer;
 					}
 				}
 			}
 			.shipping-address{
 				@extend .shipping-mode;
+				border-bottom: 1px solid #ccc;
+				border-right: 1px solid #ccc;
+				border-left: 1px solid #ccc;
+				box-sizing: border-box;
+				border-top: none;
+				.shipping-address-form{
+					float: left;
+					width: 90%;
+					margin: 3% 5%;
+					//display: block;
+					display: none;
+					.message{
+						color: #57a2ec;
+						margin-bottom: 18px;
+						font-size: 13px;
+					}
+					.field-form{
+						margin-bottom: 20px;
+						height: 50px;
+						width: 100%;
+						display: table;
+
+						label{
+							width: 30%;
+							display: table-cell;
+							color: #50475e;
+							font-weight: 700;
+						}
+						input{
+							display: table-cell;
+							width: -webkit-fill-available;
+							height: 27px;
+							padding: 0 10px;
+						}
+					}
+					.confirm{
+						float: right;
+						margin-bottom: 10px;
+						button{
+							background-color: white;
+							border: 1px solid #0061af;
+							color: #0061af;
+							padding: 16px 30px;
+							width: 180px;
+							font-size: 14px;
+						}
+					}
+				}
 			}
 		}
 		.cont-right{

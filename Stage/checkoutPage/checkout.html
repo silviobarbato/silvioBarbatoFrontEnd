@@ -56,12 +56,25 @@
                                <span class="check3">Sempre gratuito</span>
                            </div>
                        </div>
+                       <div class="shipping-mode-confirm">
+                           <!--<span class="left">CONSEGNA A &nbsp;<strong> <span> DOMICILIO | Consegna standard espressa</span></strong></span>
+                           <span class="right">CAMBIA SCELTA</span>-->
+                       </div>
                    </section>
                    <section class="shipping-address">
                        <div class="shipping-address-title sect-title">
                            <span class="title-num">2</span>
                            <span class="title-string">Aggiungi un indirizzo di spedizione</span>
                        </div>
+
+                       <div class="shipping-address-form">
+                           <!--<div class="message">* Campi obbligatori</div>
+                           <div class="field-form">
+                               <label class="title-field-form"> NOME *</label>
+                               <input type="text" name="" value="">
+                           </div>-->
+                       </div>
+
                    </section>
                </div>
                <div class="cont-right">
@@ -74,5 +87,43 @@
         <footer>
            	<p id="pF">Unieuro S.P.A. Sede legale e amministrativa: Via V.G. Schiaparelli n. 31 - Forlì C.F. e P.IVA 00876320409 - REA: FO- 177115</p>
         </footer>
+
+        <script id="temp-mustache" type="x-tmpl-mustache">
+            <div class="message">
+                * campi obbligatori
+            </div>
+            <div class="field-form">
+                <label class="title-field-form">NOME *</label>
+                <input type="text">
+            </div>
+            <div class="field-form">
+                <label class="title-field-form">COGNOME *</label>
+                <input type="text">
+            </div>
+            <div class="field-form">
+                <label class="title-field-form">TELEFONO *</label>
+                <input type="text">
+            </div>
+            <div class="field-form">
+                <label class="title-field-form">PROVINCIA *</label>
+                <input type="text">
+            </div>
+            <div class="field-form">
+                <label class="title-field-form">CITTA' *</label>
+                <input type="text">
+            </div>
+            <div class="field-form">
+                <label class="title-field-form">INDIRIZZO *</label>
+                <input type="text">
+            </div>
+            <span class="confirm"><button>PROCEDI</button></span>
+        </script>
+
+        <script id="temp-choose-confirm" type="text/template">
+            <span class="left">CONSEGNA A &nbsp;<strong> <span> DOMICILIO | Consegna standard espressa</span></strong></span>
+            <span class="right">CAMBIA SCELTA</span>
+        </script>
+
+        <script type="text/javascript" src="dist/js/boundle.min.js"></script>
     </body>
 </html>
