@@ -6,7 +6,8 @@ body {
     width: 100%;
     background-color: white;
     z-index: 9999;
-    height: 75px; }
+    height: 75px;
+    border-bottom: 1px solid #ccc; }
     body header .logo {
       display: block;
       float: left;
@@ -54,7 +55,8 @@ body {
 .container {
   width: 100%;
   float: left;
-  margin-top: 75px; }
+  margin-top: 75px;
+  margin-bottom: 30px; }
   .container .nav {
     display: flex;
     padding: 1% 5% 1% 10%;
@@ -80,7 +82,20 @@ body {
       right: -23px;
       z-index: 1; }
     .container .nav .step-second {
-      border-left: 21px solid white; }
+      border-left: 21px solid white;
+      background-color: #fafafc;
+      border-left: 21px solid #fafafc;
+      /*&:after{
+				content: '';
+				border-left: 23px solid white;
+				border-top: 17px solid transparent;
+				border-bottom: 17px solid transparent;
+				position: absolute;
+				top: 0;
+				right: -23px;
+				z-index: 1;
+				border-left: 23px solid #fafafc;
+			}*/ }
       .container .nav .step-second:before {
         content: '';
         border-left: 30px solid #e6e6ed;
@@ -89,17 +104,22 @@ body {
         position: absolute;
         top: -5px;
         left: -20px; }
-      .container .nav .step-second:after {
-        content: '';
-        border-left: 23px solid white;
-        border-top: 17px solid transparent;
-        border-bottom: 17px solid transparent;
-        position: absolute;
-        top: 0;
-        right: -23px;
-        z-index: 1; }
+      .container .nav .step-second span {
+        color: #d1dbee; }
+    .container .nav .change:after {
+      content: '';
+      border-left: 23px solid white;
+      border-top: 17px solid transparent;
+      border-bottom: 17px solid transparent;
+      position: absolute;
+      top: 0;
+      right: -23px;
+      z-index: 1;
+      border-left: 23px solid #fafafc; }
     .container .nav .step-three {
-      border-left: 21px solid white; }
+      border-left: 21px solid white;
+      background-color: #fafafc;
+      border-left: 21px solid #fafafc; }
       .container .nav .step-three:before {
         content: '';
         border-left: 30px solid #e6e6ed;
@@ -108,6 +128,8 @@ body {
         position: absolute;
         top: -5px;
         left: -20px; }
+      .container .nav .step-three span {
+        color: #d2dbee; }
   .container .content {
     width: 100%;
     float: left; }
@@ -210,50 +232,168 @@ body {
             text-decoration: underline;
             font-weight: 700;
             cursor: pointer; }
+        .container .content .shipping .shipping-mode .shipping-store-confirm, .container .content .shipping .shipping-address .shipping-store-confirm {
+          float: left;
+          padding: 0px 5%;
+          width: 90%;
+          display: none;
+          font-size: 13px;
+          line-height: 60px;
+          color: #50475e; }
+          .container .content .shipping .shipping-mode .shipping-store-confirm .right, .container .content .shipping .shipping-address .shipping-store-confirm .right {
+            float: right;
+            text-decoration: underline;
+            font-weight: 700;
+            cursor: pointer; }
       .container .content .shipping .shipping-address {
         border-bottom: 1px solid #ccc;
         border-right: 1px solid #ccc;
         border-left: 1px solid #ccc;
         box-sizing: border-box;
         border-top: none; }
-        .container .content .shipping .shipping-address .shipping-address-form {
+        .container .content .shipping .shipping-address .shipping-address-form, .container .content .shipping .shipping-address .choose-country {
           float: left;
           width: 90%;
           margin: 3% 5%;
           display: none; }
-          .container .content .shipping .shipping-address .shipping-address-form .message {
+          .container .content .shipping .shipping-address .shipping-address-form .message, .container .content .shipping .shipping-address .choose-country .message {
             color: #57a2ec;
             margin-bottom: 18px;
             font-size: 13px; }
-          .container .content .shipping .shipping-address .shipping-address-form .field-form {
+          .container .content .shipping .shipping-address .shipping-address-form .field-form, .container .content .shipping .shipping-address .choose-country .field-form {
             margin-bottom: 20px;
             height: 50px;
             width: 100%;
             display: table; }
-            .container .content .shipping .shipping-address .shipping-address-form .field-form label {
+            .container .content .shipping .shipping-address .shipping-address-form .field-form label, .container .content .shipping .shipping-address .choose-country .field-form label {
               width: 30%;
               display: table-cell;
               color: #50475e;
               font-weight: 700; }
-            .container .content .shipping .shipping-address .shipping-address-form .field-form input {
+            .container .content .shipping .shipping-address .shipping-address-form .field-form input, .container .content .shipping .shipping-address .choose-country .field-form input {
               display: table-cell;
               width: -webkit-fill-available;
               height: 27px;
-              padding: 0 10px; }
-          .container .content .shipping .shipping-address .shipping-address-form .confirm {
+              padding: 5px 10px;
+              border: 1px solid #50475e; }
+          .container .content .shipping .shipping-address .shipping-address-form .confirm, .container .content .shipping .shipping-address .choose-country .confirm {
             float: right;
             margin-bottom: 10px; }
-            .container .content .shipping .shipping-address .shipping-address-form .confirm button {
+            .container .content .shipping .shipping-address .shipping-address-form .confirm button, .container .content .shipping .shipping-address .choose-country .confirm button {
               background-color: white;
               border: 1px solid #0061af;
               color: #0061af;
               padding: 16px 30px;
               width: 180px;
               font-size: 14px; }
+        .container .content .shipping .shipping-address .choose-country .country-form {
+          margin-bottom: 20px;
+          height: 50px;
+          width: 100%;
+          display: table; }
+          .container .content .shipping .shipping-address .choose-country .country-form label {
+            width: 30%;
+            display: table-cell;
+            color: #50475e;
+            font-weight: 700; }
+          .container .content .shipping .shipping-address .choose-country .country-form input {
+            display: table-cell;
+            width: -webkit-fill-available;
+            height: 27px;
+            padding: 5px 10px;
+            border: 1px solid #50475e; }
     .container .content .cont-right {
       width: 20%;
       float: left;
       margin-right: 5%;
       margin-top: 5%; }
+      .container .content .cont-right .product-container {
+        border: 1px solid #ccc; }
+        .container .content .cont-right .product-container .summary-product {
+          width: 100%;
+          display: block; }
+          .container .content .cont-right .product-container .summary-product .count-product, .container .content .cont-right .product-container .summary-product .show-product {
+            padding: 20px 12%;
+            border-bottom: 1px solid #ccc; }
+            .container .content .cont-right .product-container .summary-product .count-product .count-product-title, .container .content .cont-right .product-container .summary-product .show-product .count-product-title {
+              font-size: 17px;
+              color: #50475e; }
+            .container .content .cont-right .product-container .summary-product .count-product .count-product-right, .container .content .cont-right .product-container .summary-product .show-product .count-product-right {
+              float: right;
+              font-size: 10px;
+              color: #847e8e;
+              cursor: pointer;
+              line-height: 2; }
+              .container .content .cont-right .product-container .summary-product .count-product .count-product-right .arrow-down, .container .content .cont-right .product-container .summary-product .show-product .count-product-right .arrow-down {
+                border: solid;
+                border-width: 0 1px 1px 0;
+                display: inline-block;
+                padding: 2px;
+                transform: rotate(45deg);
+                margin-left: 4px;
+                margin-bottom: 3px; }
+          .container .content .cont-right .product-container .summary-product .show-product {
+            font-size: 14px;
+            color: #50475e;
+            display: none; }
+            .container .content .cont-right .product-container .summary-product .show-product .name-product {
+              width: 100%;
+              display: block;
+              font-weight: 700;
+              line-height: 2; }
+            .container .content .cont-right .product-container .summary-product .show-product .items {
+              color: #847e8e; }
+              .container .content .cont-right .product-container .summary-product .show-product .items span {
+                color: #0061af;
+                font-weight: 700; }
+            .container .content .cont-right .product-container .summary-product .show-product .price-product {
+              float: right;
+              font-weight: 700; }
+        .container .content .cont-right .product-container .internal-div {
+          padding: 20px 12%;
+          color: #0061af; }
+          .container .content .cont-right .product-container .internal-div .internal-right {
+            float: right;
+            font-size: 16px; }
+          .container .content .cont-right .product-container .internal-div .internal-left {
+            font-size: 12px; }
+        .container .content .cont-right .product-container .service-price {
+          background-color: #edf4f9; }
+        .container .content .cont-right .product-container .total-price {
+          display: table;
+          width: calc(77% - 2px);
+          margin-bottom: 10px; }
+          .container .content .cont-right .product-container .total-price .internal-left {
+            font-size: 16px;
+            display: table-cell;
+            vertical-align: middle; }
+            .container .content .cont-right .product-container .total-price .internal-left span {
+              font-size: 10px;
+              display: block;
+              color: #847e8e; }
+          .container .content .cont-right .product-container .total-price .internal-right {
+            font-size: 36px; }
+      .container .content .cont-right .payment-info {
+        margin-top: 30px;
+        border: 1px solid #ccc;
+        text-align: center; }
+        .container .content .cont-right .payment-info span {
+          display: block;
+          color: #50475e;
+          margin-top: 20px; }
+        .container .content .cont-right .payment-info .mode-supported {
+          border-top: 1px solid #847e8e;
+          margin: 10px 10%;
+          width: 80%;
+          display: flow-root;
+          padding: 15px 0; }
+          .container .content .cont-right .payment-info .mode-supported article {
+            width: 33.33%;
+            float: left;
+            margin-top: 10px; }
+            .container .content .cont-right .payment-info .mode-supported article div {
+              padding: 0 2px; }
+              .container .content .cont-right .payment-info .mode-supported article div img {
+                max-width: 100%; }
 
 /*# sourceMappingURL=styleCheckout.css.map */

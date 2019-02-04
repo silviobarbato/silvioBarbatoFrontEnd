@@ -1,7 +1,7 @@
 body{
 	margin: 0;
 	font-family: "montserrat";
-	//background-color: #e6e6ed;
+
 
 	header{
 		position: fixed;
@@ -9,6 +9,7 @@ body{
 		background-color: white;
 		z-index: 9999;
 		height: 75px;
+		border-bottom: 1px solid #ccc;
 
 		.logo{
 			display: block;
@@ -70,6 +71,7 @@ body{
 	width: 100%;
 	float: left;
 	margin-top: 75px;
+	margin-bottom: 30px;
 
 	.nav{
 		display: flex;
@@ -103,6 +105,8 @@ body{
 		}
 		.step-second{
 			border-left: 21px solid white;
+			background-color: #fafafc;
+			border-left: 21px solid #fafafc;
 
 			&:before{
 				content: '';
@@ -113,7 +117,7 @@ body{
 				top: -5px;
 				left: -20px;
 			}
-			&:after{
+			/*&:after{
 				content: '';
 				border-left: 23px solid white;
 				border-top: 17px solid transparent;
@@ -122,10 +126,27 @@ body{
 				top: 0;
 				right: -23px;
 				z-index: 1;
+				border-left: 23px solid #fafafc;
+			}*/
+			span{
+				color: #d1dbee;
 			}
+		}
+		.change:after{
+			content: '';
+			border-left: 23px solid white;
+			border-top: 17px solid transparent;
+			border-bottom: 17px solid transparent;
+			position: absolute;
+			top: 0;
+			right: -23px;
+			z-index: 1;
+			border-left: 23px solid #fafafc;
 		}
 		.step-three{
 			border-left: 21px solid white;
+			background-color: #fafafc;
+			border-left: 21px solid #fafafc;
 			&:before{
 				content: '';
 				border-left: 30px solid #e6e6ed;
@@ -134,6 +155,9 @@ body{
 				position: absolute;
 				top: -5px;
 				left: -20px;
+			}
+			span{
+				color: #d2dbee;
 			}
 		}
 
@@ -268,6 +292,24 @@ body{
 						text-decoration: underline;
 						font-weight: 700;
 						cursor: pointer;
+
+					}
+				}
+				.shipping-store-confirm{
+					float: left;
+					padding: 0px 5%;
+					width: 90%;
+					display: none;
+					font-size: 13px;
+					line-height: 60px;
+					color: #50475e;
+
+					.right{
+						float: right;
+						text-decoration: underline;
+						font-weight: 700;
+						cursor: pointer;
+
 					}
 				}
 			}
@@ -305,7 +347,8 @@ body{
 							display: table-cell;
 							width: -webkit-fill-available;
 							height: 27px;
-							padding: 0 10px;
+							padding: 5px 10px;
+							border: 1px solid #50475e;
 						}
 					}
 					.confirm{
@@ -321,6 +364,29 @@ body{
 						}
 					}
 				}
+				.choose-country{
+					@extend .shipping-address-form;
+					.country-form{
+						margin-bottom: 20px;
+						height: 50px;
+						width: 100%;
+						display: table;
+
+						label{
+							width: 30%;
+							display: table-cell;
+							color: #50475e;
+							font-weight: 700;
+						}
+						input{
+							display: table-cell;
+							width: -webkit-fill-available;
+							height: 27px;
+							padding: 5px 10px;
+							border: 1px solid #50475e;
+						}
+					}
+				}
 			}
 		}
 		.cont-right{
@@ -328,6 +394,128 @@ body{
 			float: left;
 			margin-right: 5%;
 			margin-top: 5%;
+			.product-container{
+				border: 1px solid #ccc;
+				.summary-product{
+					width: 100%;
+					display: block;
+					.count-product{
+						padding: 20px 12%;
+						border-bottom: 1px solid #ccc;
+
+						.count-product-title{
+							font-size: 17px;
+							color: #50475e;
+						}
+
+						.count-product-right{
+							float: right;
+							font-size: 10px;
+							color: #847e8e;
+							cursor: pointer;
+							line-height: 2;
+
+							.arrow-down{
+								border: solid;
+								border-width: 0 1px 1px 0;
+								display: inline-block;
+								padding: 2px;
+								transform: rotate(45deg);
+								margin-left: 4px;
+								margin-bottom: 3px;
+							}
+						}
+					}
+					.show-product{
+						@extend .count-product;
+						font-size: 14px;
+						color: #50475e;
+						display: none;
+
+						.name-product{
+							width: 100%;
+						    display: block;
+						    font-weight: 700;
+						    line-height: 2;
+						}
+						.items{
+							color: #847e8e;
+							span{
+								color: #0061af;
+								font-weight: 700;
+							}
+						}
+						.price-product{
+							float: right;
+							font-weight: 700;
+						}
+					}
+				}
+				.internal-div{
+					padding: 20px 12%;
+					color: #0061af;
+					.internal-right{
+						float: right;
+						font-size: 16px;
+					}
+					.internal-left{
+						font-size: 12px;
+
+					}
+				}
+				.service-price{
+					background-color: #edf4f9;
+				}
+				.total-price{
+					display: table;
+					width: calc(77% - 2px);
+					margin-bottom: 10px;
+
+					.internal-left{
+						font-size: 16px;
+						display: table-cell;
+						vertical-align: middle;
+						span{
+							font-size: 10px;
+							display: block;
+							color: #847e8e;
+						}
+					}
+					.internal-right{
+						font-size: 36px;
+					}
+				}
+			}
+			.payment-info{
+				margin-top: 30px;
+				border: 1px solid #ccc;
+				text-align: center;
+				span{
+					display: block;
+					color: #50475e;
+					margin-top: 20px;
+				}
+				.mode-supported{
+					border-top: 1px solid #847e8e;
+					margin: 10px 10%;
+					width: 80%;
+					display: flow-root;
+					padding: 15px 0;
+
+					article{
+						width: 33.33%;
+						float: left;
+						margin-top: 10px;
+
+						div{
+							padding: 0 2px;
+							img{
+								max-width: 100%;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }

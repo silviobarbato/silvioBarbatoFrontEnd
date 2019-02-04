@@ -20,7 +20,7 @@
                    <span>Consegna</span>
                </article>
 
-               <article class="step step-second">
+               <article class="step step-second change">
                    <span>Pagamento</span>
                </article>
 
@@ -52,7 +52,8 @@
                                <span class="check1">
                                    <input type="checkbox">
                                </span>
-                               <span class="check2"> Ritira in negozio</span>
+                               <span class="check2">RITIRA IN &nbsp;<strong><span> NEGOZIO</span></strong>
+                               </span>
                                <span class="check3">Sempre gratuito</span>
                            </div>
                        </div>
@@ -60,6 +61,10 @@
                            <!--<span class="left">CONSEGNA A &nbsp;<strong> <span> DOMICILIO | Consegna standard espressa</span></strong></span>
                            <span class="right">CAMBIA SCELTA</span>-->
                        </div>
+                       <div class="shipping-store-confirm">
+
+                       </div>
+
                    </section>
                    <section class="shipping-address">
                        <div class="shipping-address-title sect-title">
@@ -75,10 +80,95 @@
                            </div>-->
                        </div>
 
+                       <div class="choose-country">
+
+                       </div>
+
                    </section>
                </div>
                <div class="cont-right">
-                   <span>Un attimo</span>
+                   <section class="product-container">
+                       <div class="summary-product">
+                           <div class="count-product internal-div">
+                               <span class="count-product-title"><strong>1 PRODOTTI</strong></span>
+                               <span class="count-product-right">
+                                   VEDI TUTTI
+                                   <i class="arrow-down"></i>
+                               </span>
+                           </div>
+
+                           <div class="show-product">
+
+                           </div>
+
+                       </div>
+                       <div class="price-product internal-div">
+                           <span class="internal-left">Totale articoli</span>
+                           <span class="internal-right">€ 16,99</span>
+
+                       </div>
+                       <div class="service-price internal-div">
+                           <span class="internal-left">Spese di spedizione </span>
+                           <span class="internal-right">€ 4,99</span>
+                       </div>
+                       <div class="total-price internal-div">
+                           <span class="internal-left">TOTALE <span>IVA INCLUSA</span></span>
+                           <span class="internal-right">€ 21,98</span>
+                       </div>
+                   </section>
+
+                   <section class="payment-info">
+                       <span>ACQUISTA IN SICUREZZA</span>
+                       <img src="https://quality.unieuro.it/online/_ui/desktop/theme-Unieuro-restyling/dist/images/payment/barclaycard.jpg">
+                       <div class="mode-supported">
+                           <article>
+                               <div>
+                                   <img src="https://quality.unieuro.it/online/_ui/desktop/theme-Unieuro-restyling/dist/images/payment/visa.png">
+                               </div>
+                           </article>
+                           <article>
+                               <div>
+                                   <img src="https://quality.unieuro.it/online/_ui/desktop/theme-Unieuro-restyling/dist/images/payment/mastercard.png">
+                               </div>
+                           </article>
+                           <article>
+                               <div>
+                                   <img src="https://quality.unieuro.it/online/_ui/desktop/theme-Unieuro-restyling/dist/images/payment/amex.png">
+                               </div>
+                           </article>
+                           <article>
+                               <div>
+                                    <img src="https://quality.unieuro.it/online/_ui/desktop/theme-Unieuro-restyling/dist/images/payment/visa-verificato.png">
+                               </div>
+                           </article>
+                           <article>
+                               <div>
+                                   <img src="https://quality.unieuro.it/online/_ui/desktop/theme-Unieuro-restyling/dist/images/payment/mastercard-securcode.png">
+                               </div>
+                           </article>
+                           <article>
+                               <div>
+                                   <img src="https://quality.unieuro.it/online/_ui/desktop/theme-Unieuro-restyling/dist/images/payment/amex-safekey.jpg">
+                               </div>
+                           </article>
+                           <article>
+                               <div>
+                                   <img src="https://quality.unieuro.it/online/_ui/desktop/theme-Unieuro-restyling/dist/images/payment/paypal.png">
+                               </div>
+                           </article>
+                           <article>
+                               <div>
+                                   <img src="https://quality.unieuro.it/online/_ui/desktop/theme-Unieuro-restyling/dist/images/payment/postepay.jpg">
+                               </div>
+                           </article>
+                           <article>
+                               <div>
+                                   <img src="https://quality.unieuro.it/online/_ui/desktop/theme-Unieuro-restyling/dist/images/payment/agos-ico.png">
+                               </div>
+                           </article>
+                       </div>
+                   </section>
+
                </div>
            </div>
 
@@ -122,6 +212,30 @@
         <script id="temp-choose-confirm" type="text/template">
             <span class="left">CONSEGNA A &nbsp;<strong> <span> DOMICILIO | Consegna standard espressa</span></strong></span>
             <span class="right">CAMBIA SCELTA</span>
+        </script>
+
+        <script id="temp-choose-store" type="text/template">
+            <span class="left">RITIRA IN &nbsp;<strong><span>NEGOZIO</strong></span>
+            <span class="right">CAMBIA SCELTA</span>
+        </script>
+
+        <script id="temp-store-country" type="text/template">
+            <div class="country-form">
+                <label class="country-form-title">SELEZIONA LA PROVINCIA</label>
+                <input type="text">
+            </div>
+        </script>
+
+        <script id="temp-show-products" type="text/template">
+            <span class="name-product">
+                VARTA 05716  &nbsp;
+            </span>
+            <span class="items">
+                <span>1</span>
+                Quantità
+            </span>
+
+            <span class="price-product">€ 16,99</span>
         </script>
 
         <script type="text/javascript" src="dist/js/boundle.min.js"></script>
