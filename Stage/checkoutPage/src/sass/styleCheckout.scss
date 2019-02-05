@@ -2,7 +2,6 @@ body{
 	margin: 0;
 	font-family: "montserrat";
 
-
 	header{
 		position: fixed;
 		width: 100%;
@@ -14,7 +13,7 @@ body{
 		.logo{
 			display: block;
 			float: left;
-			width: 33%;
+			width: 19%;
 			img{
 				height: 75px;
 				margin-left: 10%;
@@ -22,7 +21,7 @@ body{
 		}
 		.title{
 			float: left;
-			width: 34%;
+			width: 33%;
 			text-align: center;
 			line-height: 75px;
 			font-size: 18px;
@@ -45,12 +44,6 @@ body{
 		left: 0;
 		display: flex;
 		width: 100%;
-		/*
-		background-color: #0e1d42;
-		float: left;
-		width: 100%;
-		*/
-
 
 		#pF{
 			margin: 2% 0;
@@ -79,7 +72,10 @@ body{
 		background-color: #e6e6ed;
 
 		.step{
-			width: 33.33%;
+
+			&.thirty-three{
+				width: 33.33%;
+			}
 			float: left;
 			text-align: center;
 			padding: 8px 15px;
@@ -117,17 +113,7 @@ body{
 				top: -5px;
 				left: -20px;
 			}
-			/*&:after{
-				content: '';
-				border-left: 23px solid white;
-				border-top: 17px solid transparent;
-				border-bottom: 17px solid transparent;
-				position: absolute;
-				top: 0;
-				right: -23px;
-				z-index: 1;
-				border-left: 23px solid #fafafc;
-			}*/
+
 			span{
 				color: #d1dbee;
 			}
@@ -147,6 +133,7 @@ body{
 			border-left: 21px solid white;
 			background-color: #fafafc;
 			border-left: 21px solid #fafafc;
+
 			&:before{
 				content: '';
 				border-left: 30px solid #e6e6ed;
@@ -166,10 +153,12 @@ body{
 	.content{
 		width: 100%;
 		float: left;
+
 		.shipping{
 			width: 55%;
 			margin: 5% 10% 3% 10%;
 			float: left;
+
 			.shipping-mode{
 				width: 100%;
 				float: left;
@@ -177,11 +166,16 @@ body{
 			    border-right: 1px solid #ccc;
 			    border-top: 1px solid #ccc;
 			    box-sizing: border-box;
+
 				.sect-title{
 					width: 100%;
 					float: left;
 					background-color: #57a2ec;
 					display: block;
+
+					&.active{
+						background-color: #0061af;
+					}
 					.title-num{
 						width: 10%;
 						float: left;
@@ -206,10 +200,9 @@ body{
 				.shipping-mode-choose{
 					width: 100%;
 					float: left;
+
 					.choose{
 						margin: 0 5%;
-						//width: 90%;
-						//float: left;
 						font-size: 13px;
 						display: block;
 						line-height: 50px;
@@ -229,6 +222,7 @@ body{
 							    border-radius: 50px;
 							    cursor: pointer;
 							    outline: none;
+
 								&:checked:before{
 									position: absolute;
 									font: 13px/1 'Open Sans', sans-serif;
@@ -252,6 +246,7 @@ body{
     						padding-left: 35px;
 							color: #50475e;
 							cursor: pointer;
+
 							span{
 								font-weight: 700;
 							}
@@ -282,7 +277,6 @@ body{
 					float: left;
 					padding: 0px 5%;
 					width: 90%;
-					display: none;
 					font-size: 13px;
 					line-height: 60px;
 					color: #50475e;
@@ -299,10 +293,11 @@ body{
 					float: left;
 					padding: 0px 5%;
 					width: 90%;
-					display: none;
+					//display: none;
 					font-size: 13px;
 					line-height: 60px;
 					color: #50475e;
+
 
 					.right{
 						float: right;
@@ -320,12 +315,12 @@ body{
 				border-left: 1px solid #ccc;
 				box-sizing: border-box;
 				border-top: none;
+
 				.shipping-address-form{
 					float: left;
 					width: 90%;
 					margin: 3% 5%;
-					//display: block;
-					display: none;
+
 					.message{
 						color: #57a2ec;
 						margin-bottom: 18px;
@@ -366,6 +361,7 @@ body{
 				}
 				.choose-country{
 					@extend .shipping-address-form;
+
 					.country-form{
 						margin-bottom: 20px;
 						height: 50px;
@@ -384,6 +380,10 @@ body{
 							height: 27px;
 							padding: 5px 10px;
 							border: 1px solid #50475e;
+
+							&::placeholder{
+								font-style: italic;
+							}
 						}
 					}
 				}
@@ -394,14 +394,18 @@ body{
 			float: left;
 			margin-right: 5%;
 			margin-top: 5%;
+
 			.product-container{
 				border: 1px solid #ccc;
+
 				.summary-product{
 					width: 100%;
 					display: block;
+
 					.count-product{
 						padding: 20px 12%;
 						border-bottom: 1px solid #ccc;
+						cursor: pointer;
 
 						.count-product-title{
 							font-size: 17px;
@@ -412,7 +416,6 @@ body{
 							float: right;
 							font-size: 10px;
 							color: #847e8e;
-							cursor: pointer;
 							line-height: 2;
 
 							.arrow-down{
@@ -430,7 +433,6 @@ body{
 						@extend .count-product;
 						font-size: 14px;
 						color: #50475e;
-						display: none;
 
 						.name-product{
 							width: 100%;
@@ -454,6 +456,7 @@ body{
 				.internal-div{
 					padding: 20px 12%;
 					color: #0061af;
+
 					.internal-right{
 						float: right;
 						font-size: 16px;
@@ -490,6 +493,8 @@ body{
 				margin-top: 30px;
 				border: 1px solid #ccc;
 				text-align: center;
+				float: left;
+
 				span{
 					display: block;
 					color: #50475e;
@@ -499,7 +504,7 @@ body{
 					border-top: 1px solid #847e8e;
 					margin: 10px 10%;
 					width: 80%;
-					display: flow-root;
+					float: left;
 					padding: 15px 0;
 
 					article{
@@ -518,4 +523,13 @@ body{
 			}
 		}
 	}
+}
+.show{
+	display: block;
+}
+.hide{
+	display: none;
+}
+.fifty-fifty{
+	width: 50%;
 }

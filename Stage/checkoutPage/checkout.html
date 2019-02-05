@@ -4,6 +4,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
         <title>CHECKOUT</title>
         <link rel="stylesheet" type="text/css" href="src/css/styleCheckout.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Bitter:400,400italic,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <header>
@@ -16,15 +18,15 @@
 
         <section class="container">
             <div class="nav">
-               <article class="step step-one">
+               <article class="step step-one thirty-three">
                    <span>Consegna</span>
                </article>
 
-               <article class="step step-second change">
+               <article class="step step-second change thirty-three">
                    <span>Pagamento</span>
                </article>
 
-               <article class="step step-three">
+               <article class="step step-three thirty-three">
                    <span>Riepilogo</span>
                </article>
 
@@ -57,9 +59,8 @@
                                <span class="check3">Sempre gratuito</span>
                            </div>
                        </div>
-                       <div class="shipping-mode-confirm">
-                           <!--<span class="left">CONSEGNA A &nbsp;<strong> <span> DOMICILIO | Consegna standard espressa</span></strong></span>
-                           <span class="right">CAMBIA SCELTA</span>-->
+                       <div class="shipping-mode-confirm ">
+
                        </div>
                        <div class="shipping-store-confirm">
 
@@ -72,7 +73,7 @@
                            <span class="title-string">Aggiungi un indirizzo di spedizione</span>
                        </div>
 
-                       <div class="shipping-address-form">
+                       <div class="shipping-address-form hide">
                            <!--<div class="message">* Campi obbligatori</div>
                            <div class="field-form">
                                <label class="title-field-form"> NOME *</label>
@@ -80,7 +81,7 @@
                            </div>-->
                        </div>
 
-                       <div class="choose-country">
+                       <div class="choose-country hide">
 
                        </div>
 
@@ -97,7 +98,7 @@
                                </span>
                            </div>
 
-                           <div class="show-product">
+                           <div class="show-product hide">
 
                            </div>
 
@@ -222,7 +223,7 @@
         <script id="temp-store-country" type="text/template">
             <div class="country-form">
                 <label class="country-form-title">SELEZIONA LA PROVINCIA</label>
-                <input type="text">
+                <input type="text" placeholder="Seleziona una provincia">
             </div>
         </script>
 

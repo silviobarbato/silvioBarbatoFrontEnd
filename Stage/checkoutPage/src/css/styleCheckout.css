@@ -11,13 +11,13 @@ body {
     body header .logo {
       display: block;
       float: left;
-      width: 33%; }
+      width: 19%; }
       body header .logo img {
         height: 75px;
         margin-left: 10%; }
     body header .title {
       float: left;
-      width: 34%;
+      width: 33%;
       text-align: center;
       line-height: 75px;
       font-size: 18px;
@@ -35,12 +35,7 @@ body {
     right: 0;
     left: 0;
     display: flex;
-    width: 100%;
-    /*
-		background-color: #0e1d42;
-		float: left;
-		width: 100%;
-		*/ }
+    width: 100%; }
     body footer #pF {
       margin: 2% 0;
       color: #9d9aa2;
@@ -62,12 +57,13 @@ body {
     padding: 1% 5% 1% 10%;
     background-color: #e6e6ed; }
     .container .nav .step {
-      width: 33.33%;
       float: left;
       text-align: center;
       padding: 8px 15px;
       background-color: white;
       position: relative; }
+      .container .nav .step.thirty-three {
+        width: 33.33%; }
       .container .nav .step span {
         color: #0061af;
         text-transform: uppercase;
@@ -84,18 +80,7 @@ body {
     .container .nav .step-second {
       border-left: 21px solid white;
       background-color: #fafafc;
-      border-left: 21px solid #fafafc;
-      /*&:after{
-				content: '';
-				border-left: 23px solid white;
-				border-top: 17px solid transparent;
-				border-bottom: 17px solid transparent;
-				position: absolute;
-				top: 0;
-				right: -23px;
-				z-index: 1;
-				border-left: 23px solid #fafafc;
-			}*/ }
+      border-left: 21px solid #fafafc; }
       .container .nav .step-second:before {
         content: '';
         border-left: 30px solid #e6e6ed;
@@ -149,6 +134,8 @@ body {
           float: left;
           background-color: #57a2ec;
           display: block; }
+          .container .content .shipping .shipping-mode .sect-title.active, .container .content .shipping .shipping-address .sect-title.active {
+            background-color: #0061af; }
           .container .content .shipping .shipping-mode .sect-title .title-num, .container .content .shipping .shipping-address .sect-title .title-num {
             width: 10%;
             float: left;
@@ -223,7 +210,6 @@ body {
           float: left;
           padding: 0px 5%;
           width: 90%;
-          display: none;
           font-size: 13px;
           line-height: 60px;
           color: #50475e; }
@@ -236,7 +222,6 @@ body {
           float: left;
           padding: 0px 5%;
           width: 90%;
-          display: none;
           font-size: 13px;
           line-height: 60px;
           color: #50475e; }
@@ -254,8 +239,7 @@ body {
         .container .content .shipping .shipping-address .shipping-address-form, .container .content .shipping .shipping-address .choose-country {
           float: left;
           width: 90%;
-          margin: 3% 5%;
-          display: none; }
+          margin: 3% 5%; }
           .container .content .shipping .shipping-address .shipping-address-form .message, .container .content .shipping .shipping-address .choose-country .message {
             color: #57a2ec;
             margin-bottom: 18px;
@@ -302,6 +286,8 @@ body {
             height: 27px;
             padding: 5px 10px;
             border: 1px solid #50475e; }
+            .container .content .shipping .shipping-address .choose-country .country-form input::placeholder {
+              font-style: italic; }
     .container .content .cont-right {
       width: 20%;
       float: left;
@@ -314,7 +300,8 @@ body {
           display: block; }
           .container .content .cont-right .product-container .summary-product .count-product, .container .content .cont-right .product-container .summary-product .show-product {
             padding: 20px 12%;
-            border-bottom: 1px solid #ccc; }
+            border-bottom: 1px solid #ccc;
+            cursor: pointer; }
             .container .content .cont-right .product-container .summary-product .count-product .count-product-title, .container .content .cont-right .product-container .summary-product .show-product .count-product-title {
               font-size: 17px;
               color: #50475e; }
@@ -322,7 +309,6 @@ body {
               float: right;
               font-size: 10px;
               color: #847e8e;
-              cursor: pointer;
               line-height: 2; }
               .container .content .cont-right .product-container .summary-product .count-product .count-product-right .arrow-down, .container .content .cont-right .product-container .summary-product .show-product .count-product-right .arrow-down {
                 border: solid;
@@ -334,8 +320,7 @@ body {
                 margin-bottom: 3px; }
           .container .content .cont-right .product-container .summary-product .show-product {
             font-size: 14px;
-            color: #50475e;
-            display: none; }
+            color: #50475e; }
             .container .content .cont-right .product-container .summary-product .show-product .name-product {
               width: 100%;
               display: block;
@@ -376,7 +361,8 @@ body {
       .container .content .cont-right .payment-info {
         margin-top: 30px;
         border: 1px solid #ccc;
-        text-align: center; }
+        text-align: center;
+        float: left; }
         .container .content .cont-right .payment-info span {
           display: block;
           color: #50475e;
@@ -385,7 +371,7 @@ body {
           border-top: 1px solid #847e8e;
           margin: 10px 10%;
           width: 80%;
-          display: flow-root;
+          float: left;
           padding: 15px 0; }
           .container .content .cont-right .payment-info .mode-supported article {
             width: 33.33%;
@@ -395,5 +381,14 @@ body {
               padding: 0 2px; }
               .container .content .cont-right .payment-info .mode-supported article div img {
                 max-width: 100%; }
+
+.show {
+  display: block; }
+
+.hide {
+  display: none; }
+
+.fifty-fifty {
+  width: 50%; }
 
 /*# sourceMappingURL=styleCheckout.css.map */
