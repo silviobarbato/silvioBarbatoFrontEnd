@@ -1,3 +1,14 @@
+$border-color : #ccc;
+$hard-blue: #0061af;
+$light-blue: #57a2ec;
+$light-grey: #847e8e;
+$hard-grey: #50475e;
+
+%left100{
+	float: left;
+	width: 100%;
+}
+
 body{
 	margin: 0;
 	font-family: "montserrat";
@@ -8,36 +19,41 @@ body{
 		background-color: white;
 		z-index: 9999;
 		height: 75px;
-		border-bottom: 1px solid #ccc;
+		border-bottom: 1px solid $border-color;
 
 		.logo{
 			display: block;
 			float: left;
 			width: 19%;
+
 			img{
 				height: 75px;
 				margin-left: 10%;
 			}
+
 		}
+
 		.title{
 			float: left;
 			width: 33%;
 			text-align: center;
 			line-height: 75px;
 			font-size: 18px;
-			color: #0061af;
+			color: $hard-blue;
     		font-weight: 700;
 		}
+
 		.phone{
 			float: right;
     		width: 33%;
     		text-align: center;
     		line-height: 75px;
 			font-size: 18px;
-			color: #847e8e;
+			color: $light-grey;
 		}
 
 	}
+
 	footer{
 		background-color:#0e1d42;
 		right: 0;
@@ -49,7 +65,7 @@ body{
 			margin: 2% 0;
 			color: #9d9aa2;
 			padding: 0 4%;
-			font-size: 1vw;
+			font-size: 11px;
 			width: 50%;
 
 			@media(max-width: 768px){
@@ -61,8 +77,7 @@ body{
 }
 
 .container{
-	width: 100%;
-	float: left;
+	@extend %left100;
 	margin-top: 75px;
 	margin-bottom: 30px;
 
@@ -72,22 +87,27 @@ body{
 		background-color: #e6e6ed;
 
 		.step{
+			width: 50%;
 
 			&.thirty-three{
 				width: 33.33%;
 			}
+
 			float: left;
 			text-align: center;
 			padding: 8px 15px;
 			background-color: white;
 			position: relative;
+
 			span{
-				color: #0061af;
+				color: $hard-blue;
 				text-transform: uppercase;
 				font-size: 14px;
 			}
+
 		}
 		.step-one{
+
 			&:after {
 				content: '';
 				border-left: 23px solid white;
@@ -98,7 +118,9 @@ body{
 				right: -23px;
 				z-index: 1;
 			}
+
 		}
+
 		.step-second{
 			border-left: 21px solid white;
 			background-color: #fafafc;
@@ -117,7 +139,9 @@ body{
 			span{
 				color: #d1dbee;
 			}
+
 		}
+
 		.change:after{
 			content: '';
 			border-left: 23px solid white;
@@ -129,6 +153,7 @@ body{
 			z-index: 1;
 			border-left: 23px solid #fafafc;
 		}
+
 		.step-three{
 			border-left: 21px solid white;
 			background-color: #fafafc;
@@ -143,39 +168,39 @@ body{
 				top: -5px;
 				left: -20px;
 			}
+
 			span{
 				color: #d2dbee;
 			}
+
 		}
 
 	}
 
 	.content{
-		width: 100%;
-		float: left;
+		@extend %left100;
 
 		.shipping{
 			width: 55%;
-			margin: 5% 10% 3% 10%;
+			margin: 2% 10% 3% 10%;
 			float: left;
 
 			.shipping-mode{
-				width: 100%;
-				float: left;
-				border-left: 1px solid #ccc;
-			    border-right: 1px solid #ccc;
-			    border-top: 1px solid #ccc;
+				@extend %left100;
+				border-left: 1px solid $border-color;
+			    border-right: 1px solid $border-color;
+			    border-top: 1px solid $border-color;
 			    box-sizing: border-box;
 
 				.sect-title{
-					width: 100%;
-					float: left;
-					background-color: #57a2ec;
+					@extend %left100;
+					background-color: $light-blue;
 					display: block;
 
 					&.active{
-						background-color: #0061af;
+						background-color: $hard-blue;
 					}
+
 					.title-num{
 						width: 10%;
 						float: left;
@@ -186,6 +211,7 @@ body{
 						font-family: Bitter;
 						font-style: italic;
 					}
+
 					.title-string{
 						width: 75%;
 						float: left;
@@ -193,19 +219,21 @@ body{
 						line-height: 50px;
 						font-size: 12px;
 						color: white;
-						font-family: Bitter;
+						font-family: 'Bitter';
 						font-style: italic;
 					}
+
 				}
+
 				.shipping-mode-choose{
-					width: 100%;
-					float: left;
+					@extend %left100;
 
 					.choose{
 						margin: 0 5%;
 						font-size: 13px;
 						display: block;
 						line-height: 50px;
+
 						.check1{
 							display: inline-flex;
 
@@ -218,7 +246,7 @@ body{
 							    top: 7px;
 							    height: 30px;
 							    width: 30px;
-							    border: 1px solid blue;
+							    border: 1px solid $hard-blue;
 							    border-radius: 50px;
 							    cursor: pointer;
 							    outline: none;
@@ -231,55 +259,57 @@ body{
 									content: '\02143';
 									transform: rotate(40deg);
 								}
+
 								&:hover{
 									background-color: #f7f7f7;
 								}
+
 								&:checked{
 									background-color: rgb(0, 97, 175);
 								}
+
 							}
 
 
 						}
+
 						.check2{
 							display: inline-flex;
     						padding-left: 35px;
-							color: #50475e;
+							color: $hard-grey;
 							cursor: pointer;
 
 							span{
 								font-weight: 700;
 							}
+
 						}
 
 						.check3{
 							float: right;
-							color: #50475e;
+							color: $hard-grey;
 						}
 
 						&.choose1{
-							border-bottom: 1px solid #0061af;
+							border-bottom: 1px solid $hard-blue;
 						}
+
 						&.play{
-							.check1{
-								color: #0061af;
-							}
-							.check2{
-								color: #0061af;
-							}
-							.check3{
-								color: #0061af;
+
+							.check1, .check2, .check3{
+								color: $hard-blue;
 							}
 						}
 					}
 				}
+
 				.shipping-mode-confirm{
 					float: left;
 					padding: 0px 5%;
 					width: 90%;
 					font-size: 13px;
 					line-height: 60px;
-					color: #50475e;
+					color: $hard-grey;
 
 					.right{
 						float: right;
@@ -288,16 +318,16 @@ body{
 						cursor: pointer;
 
 					}
+
 				}
+
 				.shipping-store-confirm{
 					float: left;
 					padding: 0px 5%;
 					width: 90%;
-					//display: none;
 					font-size: 13px;
 					line-height: 60px;
-					color: #50475e;
-
+					color: $hard-grey;
 
 					.right{
 						float: right;
@@ -306,13 +336,15 @@ body{
 						cursor: pointer;
 
 					}
+
 				}
 			}
+
 			.shipping-address{
 				@extend .shipping-mode;
-				border-bottom: 1px solid #ccc;
-				border-right: 1px solid #ccc;
-				border-left: 1px solid #ccc;
+				border-bottom: 1px solid $border-color;
+				border-right: 1px solid $border-color;
+				border-left: 1px solid $border-color;
 				box-sizing: border-box;
 				border-top: none;
 
@@ -322,10 +354,11 @@ body{
 					margin: 3% 5%;
 
 					.message{
-						color: #57a2ec;
+						color: $light-blue;
 						margin-bottom: 18px;
 						font-size: 13px;
 					}
+
 					.field-form{
 						margin-bottom: 20px;
 						height: 50px;
@@ -335,68 +368,64 @@ body{
 						label{
 							width: 30%;
 							display: table-cell;
-							color: #50475e;
+							color: $hard-grey;
 							font-weight: 700;
+							vertical-align: middle;
 						}
+
 						input{
 							display: table-cell;
 							width: -webkit-fill-available;
 							height: 27px;
 							padding: 5px 10px;
-							border: 1px solid #50475e;
+							border: 1px solid $hard-grey;
 						}
+
 					}
+
 					.confirm{
 						float: right;
 						margin-bottom: 10px;
+
 						button{
 							background-color: white;
-							border: 1px solid #0061af;
-							color: #0061af;
+							border: 1px solid $hard-blue;
+							color: $hard-blue;
 							padding: 16px 30px;
 							width: 180px;
 							font-size: 14px;
 						}
+
 					}
 				}
+
 				.choose-country{
 					@extend .shipping-address-form;
 
 					.country-form{
-						margin-bottom: 20px;
+						@extend .field-form;
+						margin: 7px 0;
 						height: 50px;
 						width: 100%;
-						display: table;
-
-						label{
-							width: 30%;
-							display: table-cell;
-							color: #50475e;
-							font-weight: 700;
+						input::placeholder{
+							font-style: italic;
+							color: $hard-grey;
+							opacity: 0.5;
 						}
-						input{
-							display: table-cell;
-							width: -webkit-fill-available;
-							height: 27px;
-							padding: 5px 10px;
-							border: 1px solid #50475e;
 
-							&::placeholder{
-								font-style: italic;
-							}
-						}
 					}
 				}
 			}
 		}
+
 		.cont-right{
 			width: 20%;
 			float: left;
 			margin-right: 5%;
-			margin-top: 5%;
+			margin-top: 2%;
 
 			.product-container{
-				border: 1px solid #ccc;
+				border: 1px solid $border-color;
 
 				.summary-product{
 					width: 100%;
@@ -404,18 +433,18 @@ body{
 
 					.count-product{
 						padding: 20px 12%;
-						border-bottom: 1px solid #ccc;
+						border-bottom: 1px solid $border-color;
 						cursor: pointer;
 
 						.count-product-title{
 							font-size: 17px;
-							color: #50475e;
+							color: $hard-grey;
 						}
 
 						.count-product-right{
 							float: right;
 							font-size: 10px;
-							color: #847e8e;
+							color: $light-grey;
 							line-height: 2;
 
 							.arrow-down{
@@ -429,10 +458,12 @@ body{
 							}
 						}
 					}
+
 					.show-product{
 						@extend .count-product;
 						font-size: 14px;
-						color: #50475e;
+						color: $hard-grey;
+						cursor: unset;
 
 						.name-product{
 							width: 100%;
@@ -440,35 +471,45 @@ body{
 						    font-weight: 700;
 						    line-height: 2;
 						}
+
 						.items{
-							color: #847e8e;
+							color: $light-grey;
+
 							span{
-								color: #0061af;
+								color: $hard-blue;
 								font-weight: 700;
 							}
+
 						}
+
 						.price-product{
 							float: right;
 							font-weight: 700;
 						}
+
 					}
 				}
+
 				.internal-div{
 					padding: 20px 12%;
-					color: #0061af;
+					color: $hard-blue;
 
 					.internal-right{
 						float: right;
 						font-size: 16px;
 					}
+
 					.internal-left{
 						font-size: 12px;
 
 					}
+
 				}
+
 				.service-price{
 					background-color: #edf4f9;
 				}
+
 				.total-price{
 					display: table;
 					width: calc(77% - 2px);
@@ -481,27 +522,32 @@ body{
 						span{
 							font-size: 10px;
 							display: block;
-							color: #847e8e;
+							color: $light-grey;
 						}
+
 					}
+
 					.internal-right{
 						font-size: 36px;
 					}
+
 				}
 			}
+
 			.payment-info{
 				margin-top: 30px;
-				border: 1px solid #ccc;
+				border: 1px solid $border-color;
 				text-align: center;
 				float: left;
 
 				span{
 					display: block;
-					color: #50475e;
+					color: $hard-grey;
 					margin-top: 20px;
 				}
+				
 				.mode-supported{
-					border-top: 1px solid #847e8e;
+					border-top: 1px solid $light-grey;
 					margin: 10px 10%;
 					width: 80%;
 					float: left;
@@ -514,6 +560,7 @@ body{
 
 						div{
 							padding: 0 2px;
+
 							img{
 								max-width: 100%;
 							}
@@ -524,12 +571,7 @@ body{
 		}
 	}
 }
-.show{
-	display: block;
-}
+
 .hide{
 	display: none;
-}
-.fifty-fifty{
-	width: 50%;
 }
